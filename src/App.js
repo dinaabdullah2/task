@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginForm from "./components/template/LoginForm";
+import VideoPlayer from "./components/template/VideoPlayer";
+import Footer from "./components/template/Footer";
+import Navbar from "./components/template/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" flex min-h-screen flex-col  md:bg-[url('./../src/assets/image/background.png')] gap-5 bg-no-repeat p-4  bg- md:p-12 background">
+      <Navbar />
+      <LoginForm />
+      <Footer />
+      <VideoPlayer />
     </div>
   );
 }
